@@ -18,6 +18,7 @@ IT-Insights-Blogs is a React-based blog application that allows users to explore
 - React Router
 - HTML
 - CSS
+- Tailwind CSS
 
 ## How to Use
 
