@@ -49,15 +49,9 @@ export default function AppContextProvider({children}) {
         setPage(page);
     }
 
-    function handleThemeSwitch()
-    {
-        setTheme(theme === "dark" ? "light" : "dark");
-
-        const checkbox = document.getElementById("dark-toggle");
-        const dot = document.querySelector(".dot");
-
-        dot.style.transform = checkbox.checked ? "translateX(100%)" : "translateX(0)";
-    }
+    function handleThemeSwitch() {
+        setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+      }
 
     const value = {
         loading,
