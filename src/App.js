@@ -12,7 +12,7 @@ function App() {
 
   const{fetchBlogPosts} = useContext(appContext);
 
-  const[searchParams, setSearchParams] = useSearchParams();
+  const[searchParams] = useSearchParams();
   const location = useLocation();
   const { theme } = useContext(appContext);
 
@@ -32,7 +32,7 @@ function App() {
      else{
       fetchBlogPosts(Number(page));
      }
-  },[location.pathname, location.search]);
+  },[location.pathname, location.search,fetchBlogPosts, searchParams]);
 
   useEffect(() => {
     if (theme === "dark") {
