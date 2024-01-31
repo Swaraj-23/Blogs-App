@@ -38,7 +38,7 @@ function BlogPage() {
     if (blogId) {
       fetchRelatedBlogs();
     }
-  }, [location.pathname,blogId, fetchRelatedBlogs]);
+  }, [location.pathname]);
 
   return (
     <div className="py-24 dark:bg-slate-800 dark:text-white">

@@ -32,7 +32,7 @@ function App() {
      else{
       fetchBlogPosts(Number(page));
      }
-  },[location.pathname, location.search,fetchBlogPosts, searchParams]);
+  },[location.pathname, location.search]);
 
   useEffect(() => {
     if (theme === "dark") {
